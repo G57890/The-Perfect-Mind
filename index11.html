@@ -1,0 +1,106 @@
+<!-- ............................The tests menu............................. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
+    <title>Math</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <h1>
+      <span id="score">0</span>
+    </h1>
+    <div class="container">
+      <div class="slider">
+        <!-- Test1 -->
+        <div class="button-container1">
+          <div class="questions">
+            <h2>
+              Q1- Joey had 6 siblings. All of them were born 2 years apart. The
+              youngest is Chloe who is only 7 years old while Joey is the
+              eldest. Calculate Joey's age?<br />a-12<br />b-18<br />c-22<br />d-19<br />
+            </h2>
+          </div>
+          <button onclick="disableButtons1()" class="unscore-btn">.a.</button>
+          <button onclick="disableButtons1()" class="unscore-btn">.b.</button>
+          <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
+          <button class="score-btn">.d.</button>
+        </div>
+        <!-- Test2 -->
+        <div class="button-container2">
+          <div class="questions">
+            <h2>
+              Q2- Solve: 3+ 2 (8-3) ?<br />a-13<br />b-24<br />c-15<br />d-17<br />
+            </h2>
+          </div>
+          <button class="score-btn">.a.</button>
+          <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
+          <button onclick="disableButtons2()" class="unscore-btn">.c.</button>
+          <button onclick="disableButtons2()" class="unscore-btn">.d.</button>
+        </div>
+        <!-- Test3 -->
+        <div class="button-container3">
+          <div class="questions">
+            <h2>
+              Q3- If 1=3, 2=3, 3=5, 4=4; 5=4, then<br />6=?<br />a-2<br />b-5<br />c-3<br />d-4<br />
+            </h2>
+          </div>
+          <button onclick="disableButtons3()" class="unscore-btn">.a.</button>
+          <button onclick="disableButtons3()" class="unscore-btn">.b.</button>
+          <button class="score-btn">.c.</button>
+          <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
+        </div>
+        <!-- Test4 -->
+        <div class="button-container4">
+          <div class="questions">
+            <h2>
+              Q4- Suppose there is a three-digit number. The second digit of the
+              number is four times bigger than the third digit, while the first
+              digit is three less than the second digit. What is that number?<br />a-131<br />b-140<br />c-130<br />d-141<br />
+            </h2>
+          </div>
+          <button onclick="disableButtons4()" class="unscore-btn">.a.</button>
+          <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
+          <button onclick="disableButtons4()" class="unscore-btn">.c.</button>
+          <button class="score-btn">.d.</button>
+        </div>
+        <!-- Test5 -->
+        <div class="button-container5">
+          <div class="questions">
+            <h2>
+              Q5- Looking at this series: 22, 21, 23, 22, 24, 23,... the number
+              that should come next is <strong>25</strong> ?
+            </h2>
+          </div>
+          <button class="score-btn">.T.</button>
+          <button onclick="disableButtons5()" class="unscore-btn">.F.</button>
+        </div>
+        <!-- Finsh test -->
+        <div class="finsh">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <button onclick="transferScore()" class="finsh-btn">
+            Finsh the test
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Next and Previous buttons -->
+    <button
+      onclick="slideNext()"
+      style="margin: 0%; margin-top: 2%; width: fit-content"
+      class="next"
+    >
+      Next
+    </button>
+    <button
+      onclick="slidePrev()"
+      style="margin: 0%; margin-top: 3%; margin-bottom: 2%; width: fit-content"
+      class="previous"
+    >
+      Previous
+    </button>
+    <script src="script1.js"></script>
+  </body>
+</html>
