@@ -38,11 +38,13 @@ h1 {
     border-bottom: 3px solid rgb(155, 155, 155);
     border-left: 4px solid rgb(61, 61, 61);
     transition: ease-in-out 0.3;
+    direction: rtl;
 }
 
 span{
     font-size: 60px;
     transition: ease-in-out 0.3s;
+    direction: rtl;
 }
 
 #free-palestine{
@@ -57,18 +59,21 @@ span{
     padding-right:10px;
     padding-left: 10px;
     border: 1.5px solid #f7c873;
+    direction: rtl;
 }
 
 img{
     width: 300px;
     margin-top: 5px;
     border: 1.5px solid #f7c873;
+    direction: rtl;
 }
 
 video {
     width: 300px;
     margin-top: 5px;
     border: 1.5px solid #f7c873;
+    direction: rtl;
 }
 
 .button-container1,
@@ -90,8 +95,10 @@ video {
 .finsh-btn{
     width: 100%;
     margin: auto;
+    padding-bottom: 12.5px;
     transition: ease-in-out 0.3s;
     animation-delay: 0.4s;
+    direction: rtl;
 }
 .finsh-btn:active{
     border-right: solid 3px white;
@@ -104,6 +111,7 @@ video {
     justify-content: space-between;
     margin: auto;
     width: 70%;
+    direction: rtl;
 }
 button{
     background-color: rgb(231, 231, 231);
@@ -113,6 +121,25 @@ button{
     color: #f7c873;
     -webkit-text-stroke: black 0.5px;
     padding: 5px;
+    direction: rtl;
+}
+
+.score-btn{
+    text-align: center;
+    width: 45px;
+    height: 50px;
+    padding-top: 5px;
+    direction: rtl;
+}
+
+.unscore-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 47px;
+    height: 50px;
+    padding-top: 5px;
+    direction: rtl;
 }
 
 .unscore-btn[disabled]{
@@ -126,6 +153,7 @@ button{
 #donate {
     transition: ease-in-out 0.1;
     color: black;
+    direction: rtl;
 }
     
 #donate:active {
@@ -135,6 +163,7 @@ button{
 .previous, .next{
     transition: ease-in-out 0.2s;
     animation-delay: 0.3s;
+    direction: rtl;
 }
 .previous:active, .next:active{
     border-right: solid 3px white;
@@ -144,30 +173,19 @@ button{
 }
 
 @media (min-width: 550px) {
-
-  h2{
-      font-size: 1.9rem;
-  }
+h2{
+    font-size: 1.9rem;
+}
 }
 @media (max-width: 430px) {
 
-  .rhombicosidodecahedron {
-      font-size: 1.3rem;
-  }
-
-  img, video{
-      width: 80%;
-  }
+    img,video {
+        width: 80%;
+    }
 }
-@media (max-width: 335px) {
 
-  .rhombicosidodecahedron {
-     font-size: 1.1rem;
-  }
-
-}
 @media (max-width: 332px) {
-  .container{
-     padding-bottom: 18%;
-  }
+    .container{
+        padding-bottom: 18%;
+    }
 }

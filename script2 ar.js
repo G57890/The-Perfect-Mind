@@ -72,7 +72,7 @@ scoreButtons.forEach((button) => {
       // Transfering the Score to the start menu
       function transferScore() {
         localStorage.setItem("lastScore", score);
-        window.location.href = "index3.html";
+        window.location.href = "index2 ar.html";
       }
       // Next and Previous buttons
       function slideNext() {

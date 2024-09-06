@@ -45,7 +45,7 @@
         });
       }
 
-      // Right answer button for all tests
+       // Right answer button for all tests
 scoreButtons.forEach((button) => {
     button.addEventListener("click", function () {
         if (!button.classList.contains("disabled")) {
@@ -72,7 +72,7 @@ scoreButtons.forEach((button) => {
       // Transfering the Score to the start menu
       function transferScore() {
         localStorage.setItem("lastScore", score);
-        window.location.href = "index3.html";
+        window.location.href = "index1 ar.html";
       }
       // Next and Previous buttons
       function slideNext() {

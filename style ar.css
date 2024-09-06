@@ -6,6 +6,7 @@
 body{
     display: flex;
     flex-direction: row;
+    direction: rtl;
     background-color: rgb(238, 238, 238);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -31,7 +32,7 @@ summary {
     color: rgb(87, 87, 87);
     font-size: 22px;
     transition: ease-in-out 0.1s;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
     
 .p-lang {
@@ -72,7 +73,7 @@ summary {
 .container3{
     border: 1.8px solid black;
     padding-top: 3px;
-    padding-left: 10px;
+    padding-right: 10px;
 }
 .introduction {
     background-color: #FAEBCD;
@@ -106,7 +107,7 @@ a{
     transition: ease-in-out 0.5s;
     margin-top: 10px;
     margin-bottom: 5px;
-    margin-left: 48%;
+    margin-right: 48%;
 }
 button{
     margin-top: 10px;
@@ -136,7 +137,7 @@ h1{
     font-family: sans-serif;
 }
 .field-description{
-    margin-left: 48%;
+    margin-right: 48%;
     border-top: 3px solid rgb(97, 97, 97);
     border-right: 3px solid rgb(212, 212, 212);
     border-bottom: 3px solid rgb(255, 255, 255);
@@ -147,7 +148,7 @@ h1{
 .field-pictures-div{
     width: 60%;
     max-width: 300px;
-    margin-right: 25%
+    margin-left: 25%
 }
 .field-pictures{
     width: 100%;
@@ -175,16 +176,16 @@ h5{
 }
 @font-face{
     font-family: q-font;
-    src:url(texgyrechorus-mediumitalic.otf)
+    src:url(BArabics.ttf)
 }
 @media (max-width: 1122px) {
     .field-description{
-        margin-left: 3%;
+        margin-right: 3%;
     }
     a{
-        margin-left: 3%;
+        margin-right: 3%;
     }
     .field-pictures-div{
-        margin-right: 5%;
+        margin-left: 5%;
     }
 }

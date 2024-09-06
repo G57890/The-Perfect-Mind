@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
-    <title>Math</title>
+    <title>Decision-Making</title>
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
@@ -18,43 +18,61 @@
         <div class="button-container1">
           <div class="questions">
             <h2>
-              Q1- Joey had 6 siblings. All of them were born 2 years apart. The
-              youngest is Chloe who is only 7 years old while Joey is the
-              eldest. Calculate Joey's age?<br />a-12<br />b-18<br />c-22<br />d-19<br />
+              Q1- If you are in a situation like this, what should you do?<br />
+              <img
+                src="image/Screenshot111111 2024-09-02 114319.jpg"
+                alt="2 persons with there hair going up"
+              />
+              <br />a- Brush your hair.<br /><br />b- Hide under something.<br /><br />c-
+              Wash yourself with water.<br /><br />d- Just chill like these
+              guys.<br />
             </h2>
           </div>
           <br />
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons1()" class="unscore-btn">.a.</button>
-            <button onclick="disableButtons1()" class="unscore-btn">.b.</button>
+            <button class="score-btn">.b.</button>
           </div>
           <br />
           <br />
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
-            <button class="score-btn">.d.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.d.</button>
           </div>
         </div>
         <!-- Test2 -->
         <div class="button-container2">
           <div class="questions">
             <h2>
-              Q2- Solve: 3+ 2 (8-3) ?<br />a-13<br />b-24<br />c-15<br />d-17<br />
+              Q2- If you visit someone and you found out that this thing is
+              here, what would you do?<br /><video autoplay muted loop>
+                <source
+                  src="image/spider video 2024-09-02 at 15.01.23_a4dc7cee.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="image/spider video 2024-09-02 at 15.01.23_a4dc7cee.webm"
+                  type="video/webm"
+                />
+                This browser dose not support HTML5 audio
+              </video>
+              <br />a- Kill it<br /><br />b- put it outside<br /><br />c- Leave it be<br /><br />d-
+              leave the house<br />
             </h2>
           </div>
           <br />
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.a.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.a.</button>
             <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
           </div>
           <br />
           <br />
           <br />
           <div class="ml-btns">
-            <button onclick="disableButtons2()" class="unscore-btn">.c.</button>
+            <button class="score-btn">.c.</button>
             <button onclick="disableButtons2()" class="unscore-btn">.d.</button>
           </div>
         </div>
@@ -62,7 +80,8 @@
         <div class="button-container3">
           <div class="questions">
             <h2>
-              Q3- If 1=3, 2=3, 3=5, 4=4; 5=4, then 6=?<br />a-2<br />b-5<br />c-3<br />d-4<br />
+              Q3- if someone robbed or hurt you in The UK what number should you
+              call?<br />a-911<br />b-118<br />c-221<br />d-Other<br />
             </h2>
           </div>
           <br />
@@ -75,23 +94,32 @@
           <br />
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.c.</button>
-            <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.c.</button>
+            <button class="score-btn">.d.</button>
           </div>
         </div>
         <!-- Test4 -->
         <div class="button-container4">
-          <div class="questions">
+          <div class="questions" id="free-palestine">
             <h2>
-              Q4- Suppose there is a three-digit number. The second digit of the
-              number is four times bigger than the third digit, while the first
-              digit is three less than the second digit. What is that number?<br />a-131<br />b-140<br />c-130<br />d-141<br />
+              Q4- If you know that there is people that need help and they are
+              being subjected to genocide, What do you do for them?<br /><br />a-
+              Help them through donations.<br /><br />b- Do nothing<br /><br />c-
+              forget about them.<br /><br />d- helping to support the
+              genocide.<br />
             </h2>
+            <p id="p-donate">
+              donate at:
+              <a href="https://ksr.org.kw/?sl=en" id="donate" target="_blank"
+                >ksr.org.kw.com</a
+              >
+            </p>
           </div>
           <br />
           <br />
+          <br />
           <div class="ml-btns">
-            <button onclick="disableButtons4()" class="unscore-btn">.a.</button>
+            <button class="score-btn">.a.</button>
             <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
           </div>
           <br />
@@ -99,22 +127,24 @@
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons4()" class="unscore-btn">.c.</button>
-            <button class="score-btn">.d.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.d.</button>
           </div>
         </div>
         <!-- Test5 -->
         <div class="button-container5">
           <div class="questions">
             <h2>
-              Q5- Looking at this series: 22, 21, 23, 22, 24, 23,... the number
-              that should come next is <strong style="color: #ffbc3f">25</strong> ?
+              Q5- If your finger got cut off and after cleaning everything, you
+              put your finger
+              <strong style="color: #ffbc3f">in a bag of ice</strong> to
+              preserve it.
             </h2>
           </div>
           <br />
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.T.</button>
-            <button onclick="disableButtons5()" class="unscore-btn">.F.</button>
+            <button onclick="disableButtons5()" class="unscore-btn">.T.</button>
+            <button class="score-btn">.F.</button>
           </div>
         </div>
         <!-- Finsh test -->
@@ -142,6 +172,6 @@
     >
       Previous
     </button>
-    <script src="script1.js"></script>
+    <script src="script4.js"></script>
   </body>
 </html>

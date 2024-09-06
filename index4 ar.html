@@ -1,15 +1,16 @@
 <!-- .............................Starting menu........................ -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
-    <title>Start Menu</title>
+    <title>قائمة البدء</title>
     <style>
       body {
         background-color: rgb(232, 232, 232);
         display: flex;
+        direction: rtl;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -21,6 +22,7 @@
         margin-top: 350px;
       }
       p {
+        font-size: 1.01rem;
         color: #f7c873;
         -webkit-text-stroke: black 0.4px;
         margin: auto;
@@ -45,27 +47,39 @@
         color: #faebcd;
         transition: ease-in-out 0.5s;
       }
+      #warning {
+        color: rgb(255, 31, 31);
+        font-size: 0.95rem;
+      }
+      @media (max-width: 409px) {
+        #warning {
+          font-size: 0.7rem;
+        }
+      }
     </style>
   </head>
   <body>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <!-- The name of the field -->
-    <h1 style="font-size: 2.9rem; letter-spacing: 8px; text-align: center">
-      Sciences
+    <h1 style="font-size: 2.9rem; letter-spacing: 10px; text-align: center">
+      اتخاذ القرارات
     </h1>
     <!-- The score -->
     <p style="font-size: 1.8rem"><span id="lastScore">0</span>/5</p>
     <!-- start button -->
-    <a href="index22.html">
+    <a href="index44 ar.html">
       <button style="width: 50px; height: 40px">
-        <p style="font-size: medium" class="p-button">Start</p>
+        <p class="p-button">البدء</p>
       </button></a
     >
-    <a href="index.html"
+    <a href="index ar.html"
       ><button style="height: 30px">
-        <p class="p-button">Go to menu</p>
+        <p class="p-button">الرجوع للقائمة</p>
       </button></a
     >
+    <p id="warning">
+      * !! تحذير هذا الإختبار يحتوي على محتوى به عناكب (في س2)!! *
+    </p>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <script>
       document.addEventListener("DOMContentLoaded", function () {

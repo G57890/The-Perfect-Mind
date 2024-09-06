@@ -1,0 +1,176 @@
+<!-- ............................The tests menu............................. -->
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
+    <title>اتخاذ-القرارات</title>
+    <link rel="stylesheet" href="style1 ar.css" />
+  </head>
+  <body>
+    <h1>
+      <span id="score">0</span>
+    </h1>
+    <div class="container">
+      <div class="slider">
+        <!-- Test1 -->
+        <div class="button-container1">
+          <div class="questions">
+            <h2>
+              س1- إذا أنت في حاله مثل هذه، ماذا سوف تفعل؟<br />
+              <img
+                src="image/Screenshot111111 2024-09-02 114319.jpg"
+                alt="2 persons with there hair going up"
+              />
+              <br />أ- تمشط شعرك.<br /><br />ب- تختبئ تحت شيء.<br /><br />ج-
+              تغسل نفسك بالماء.<br /><br />د- تهدء مثل هؤلاء الأشخاص.<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.أ.</button>
+            <button class="score-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.ج.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test2 -->
+        <div class="button-container2">
+          <div class="questions">
+            <h2>
+              س2- إذا زرت أحدا ووجدت هذا الشيء، ماذا سوف تفعل؟<br /><video
+                autoplay
+                muted
+                loop
+              >
+                <source
+                  src="image/spider video 2024-09-02 at 15.01.23_a4dc7cee.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="image/spider video 2024-09-02 at 15.01.23_a4dc7cee.webm"
+                  type="video/webm"
+                />
+                هذا المتصفح لا يدعم HTML5 audio
+              </video>
+              <br />أ- إقتله<br /><br />ب- خذه وأوضعه في الخارج.<br /><br />ج- لا تفعل به
+              شيء<br /><br />د- أخرج من البيت<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.ج.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test3 -->
+        <div class="button-container3">
+          <div class="questions">
+            <h2>
+              س3- إن كان هنالك شخصا سرقك أو آذاك في بريطانيا، ما هو الرقم الذي
+              تتصل فيه؟<br />أ-911<br />ب-118<br />ج-221<br />د-أخرى<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons3()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons3()" class="unscore-btn">.ج.</button>
+            <button class="score-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test4 -->
+        <div class="button-container4">
+          <div class="questions" id="free-palestine">
+            <h2>
+              س4- إذا كنت تعلم أن هناك أشخاصًا يحتاجون إلى المساعدة وأنهم
+              يتعرضون للإبادة الجماعية، فماذا تفعل لهم؟<br /><br />أ- إدعي وتبرع
+              لهم.<br /><br />ب- لا تفعل شيء.<br /><br />ج- تنساهم.<br /><br />د-
+              تدعم الإبادة الجماعية.<br />
+            </h2>
+            <p id="p-donate">
+              تبرع في:
+              <a href="https://ksr.org.kw/?sl=ar" id="donate" target="_blank"
+                >ksr.org.kw.com</a
+              >
+            </p>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.أ.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.ج.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test5 -->
+        <div class="button-container5">
+          <div class="questions">
+            <h2>
+              س5- إذا انقطع إصبعك ونظفت كل شي، تضع إصبعك المقطوع
+              <strong style="color: #ffbc3f">في كيس من الثلج</strong> لتحافظ عليه.
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons5()" class="unscore-btn">.أ.</button>
+            <button class="score-btn">.ب.</button>
+          </div>
+        </div>
+        <!-- Finsh test -->
+        <div class="finsh">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <button onclick="transferScore()" class="finsh-btn">
+            الانتهاء من الإختبار
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Next and Previous buttons -->
+    <button
+      onclick="slideNext()"
+      style="margin: 0%; margin-top: 2%; width: fit-content"
+      class="next"
+    >
+      التالي
+    </button>
+    <br />
+    <button
+      onclick="slidePrev()"
+      style="margin: 0%; margin-bottom: 2%; width: fit-content"
+      class="previous"
+    >
+      السابق
+    </button>
+    <script src="script4 ar.js"></script>
+  </body>
+</html>

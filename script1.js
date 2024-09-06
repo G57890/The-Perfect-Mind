@@ -44,17 +44,31 @@
           button.disabled = true;
         });
       }
-      // Right answer button for all of the tests
-      scoreButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          if (!button.classList.contains("disabled")) {
+
+       // Right answer button for all tests
+scoreButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+        if (!button.classList.contains("disabled")) {
             score++;
             scoreDisplay.textContent = score;
+
             button.classList.add("disabled");
             button.disabled = true;
-          }
-        });
-      });
+
+            if (button.classList.contains("score-btn")) {
+                // Increase font size with transition only when the button is disabled
+                scoreDisplay.style.transition = "font-size 0.3s ease-in-out";
+                scoreDisplay.style.fontSize = "80px";
+
+                setTimeout(() => {
+                    scoreDisplay.style.fontSize = "60px"; // Return font size back to 60px
+                    scoreDisplay.style.transition = ""; // Reset transition
+                }, 300); // Reset font size after 0.3s
+            }
+        }
+    });
+});
+
       // Transfering the Score to the start menu
       function transferScore() {
         localStorage.setItem("lastScore", score);

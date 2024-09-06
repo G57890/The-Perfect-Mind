@@ -18,14 +18,23 @@
         <div class="button-container1">
           <div class="questions">
             <h2>
-              Q1-What is the hardest natural substance on Earth?
-              <br />a-diamond<br />b-Basalt<br />c- quarters <br />d-gold<br />
+              Q1-What is the hardest natural substance after graphite on Earth?
+              <br />a- Diamond<br />b- Basalt<br />c- Quartz <br />d- Gold<br />
             </h2>
           </div>
-          <button class="score-btn">.a.</button>
-          <button onclick="disableButtons1()" class="unscore-btn">.b.</button>
-          <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
-          <button onclick="disableButtons1()" class="unscore-btn">.d.</button>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.a.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.d.</button>
+          </div>
         </div>
         <!-- Test2 -->
         <div class="button-container2">
@@ -34,10 +43,19 @@
               Q2- How many bones are in the human body?<br />a-300<br />b-256<br />c-115<br />d-206<br />
             </h2>
           </div>
-          <button onclick="disableButtons2()" class="unscore-btn">.a.</button>
-          <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
-          <button onclick="disableButtons2()" class="unscore-btn">.c.</button>
-          <button class="score-btn">.d.</button>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.a.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.c.</button>
+            <button class="score-btn">.d.</button>
+          </div>
         </div>
         <!-- Test3 -->
         <div class="button-container3">
@@ -46,35 +64,57 @@
               Q3- At what temperature are Celsius and Fahrenheit equal?<br />a-(-41.35)<br />b-27<br />c-(-40)<br />d-0<br />
             </h2>
           </div>
-          <button onclick="disableButtons3()" class="unscore-btn">.a.</button>
-          <button onclick="disableButtons3()" class="unscore-btn">.b.</button>
-          <button class="score-btn">.c.</button>
-          <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons3()" class="unscore-btn">.a.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.c.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
+          </div>
         </div>
         <!-- Test4 -->
         <div class="button-container4">
           <div class="questions">
             <h2>
               Q4- What name is given for the number of protons found in the
-              nucleus of an atom?<br />a- Other..<br />b-nucleus number<br />c-tomic
-              number<br />d-Atomic number<br />
+              nucleus of an atom?<br />a- Other..<br />b- Nucleus number<br />c-
+              Proton number<br />d- Atomic number<br />
             </h2>
           </div>
-          <button onclick="disableButtons4()" class="unscore-btn">.a.</button>
-          <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
-          <button onclick="disableButtons4()" class="unscore-btn">.c.</button>
-          <button class="score-btn">.d.</button>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.a.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.c.</button>
+            <button class="score-btn">.d.</button>
+          </div>
         </div>
         <!-- Test5 -->
         <div class="button-container5">
           <div class="questions">
             <h2>
               Q5- The concept of gravity was discovered by
-              <strong>Einstein</strong>
+              <strong style="color: #ffbc3f">Einstein</strong>
             </h2>
           </div>
-          <button onclick="disableButtons5()" class="unscore-btn">.T.</button>
-          <button class="score-btn">.F.</button>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons5()" class="unscore-btn">.T.</button>
+            <button class="score-btn">.F.</button>
+          </div>
         </div>
         <!-- Finsh test -->
         <div class="finsh">
@@ -93,9 +133,10 @@
     >
       Next
     </button>
+    <br />
     <button
       onclick="slidePrev()"
-      style="margin: 0%; margin-top: 3%; margin-bottom: 2%; width: fit-content"
+      style="margin: 0%; margin-bottom: 2%; width: fit-content"
       class="previous"
     >
       Previous

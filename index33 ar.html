@@ -1,0 +1,160 @@
+<!-- ............................The tests menu............................. -->
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
+    <title>الفن</title>
+    <link rel="stylesheet" href="style1 ar.css" />
+  </head>
+  <body>
+    <h1>
+      <span id="score">0</span>
+    </h1>
+    <div class="container">
+      <div class="slider">
+        <!-- Test1 -->
+        <div class="button-container1">
+          <div class="questions">
+            <h2>
+              س1- ما هو اللون المناسب الذي يتناسب مع هذه الألوان؟<br /><img
+                src="image/Screenshot 2024-08-16 210345.jpg"
+                alt="Shades of beige"
+              />
+              <br />أ-البنفسجي<br />ب-الأسود<br />ج-الأزرق<br />د-الأخضر<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.أ.</button>
+            <button class="score-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.ج.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test2 -->
+        <div class="button-container2">
+          <div class="questions">
+            <h2>
+              س2- ما هو لون الصبغة التي تسمى المغرة والتي تستخدم على نطاق واسع
+              في الفن الأسترالي الأصلي؟<br />أ-أبيض<br />ب-أزرق<br />ج-أحمر<br />ب-أزرق
+              فاتح<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.ج.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test3 -->
+        <div class="button-container3">
+          <div class="questions">
+            <h2>
+              س3- ما هي أرخص لوحة فنية في العالم؟<br />أ-سالفاتور موندي<br />ب-الموناليزا<br />ج-البجعة
+              السوداء<br />د-الجبل الأخضر<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons3()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.ج.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test4 -->
+        <div class="button-container4">
+          <div class="questions">
+            <h2>
+              س4- ما نوع الزهرة الذي يظهر بشكل كبير في أعمال كلود مونيه؟<br />أ-زهرة
+              الكالا<br />ب-الهندباء<br />ج-قزحية<br />د-زنابق الماء<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.ج.</button>
+            <button class="score-btn">.د.</button>
+          </div>
+        </div>
+        <!-- Test5 -->
+        <div class="button-container5">
+          <div class="questions">
+            <h2>
+              هذا الشكل إسمه
+              <strong style="color: #ffbc3f" class="rhombicosidodecahedron"
+                >المعين ذو العشرة أوجه</strong
+              >.
+            </h2>
+            <img
+              src="image/320px-Rhombicosidodecahedron.png"
+              alt="A complicated shape"
+              style="border: none"
+            />
+            <br />
+            <br />
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn">.أ.</button>
+            <button onclick="disableButtons5()" class="unscore-btn">.ب.</button>
+          </div>
+        </div>
+        <!-- Finsh test -->
+        <div class="finsh">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <button onclick="transferScore()" class="finsh-btn">
+            الانتهاء من الإختبار
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Next and Previous buttons -->
+    <button
+      onclick="slideNext()"
+      style="margin: 0%; margin-top: 2%; width: fit-content"
+      class="next"
+    >
+      التالي
+    </button>
+    <br />
+    <button
+      onclick="slidePrev()"
+      style="margin: 0%; margin-bottom: 2%; width: fit-content"
+      class="previous"
+    >
+      السابق
+    </button>
+    <script src="script3 ar.js"></script>
+  </body>
+</html>
