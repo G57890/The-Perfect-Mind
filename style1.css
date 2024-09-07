@@ -20,7 +20,8 @@ body{
     border-bottom: 10px solid rgb(155, 155, 155);
     border-left: 13px solid rgb(61, 61, 61);
     padding-bottom: 6%;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .slider {
