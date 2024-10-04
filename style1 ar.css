@@ -42,6 +42,31 @@ h1 {
     direction: rtl;
 }
 
+.correct1,
+.correct2,
+.correct3,
+.correct4,
+.correct5 {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    font-family: sans-serif;
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: transparent;
+    transition: all 0.5s ease;
+}
+
+.correct1.active,
+.correct2.active,
+.correct3.active,
+.correct4.active,
+.correct5.active {
+    font-size: 100px;
+    color: #f7c873;
+    -webkit-text-stroke: 1px black;
+}
+
 span{
     font-size: 60px;
     transition: ease-in-out 0.3s;
@@ -125,7 +150,15 @@ button{
     direction: rtl;
 }
 
-.score-btn{
+button[disabled] {
+    background-color: #fcf0d9;
+}
+
+.score-btn1,
+.score-btn2,
+.score-btn3,
+.score-btn4,
+.score-btn5{
     text-align: center;
     width: 45px;
     height: 50px;

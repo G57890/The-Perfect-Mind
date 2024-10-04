@@ -30,11 +30,11 @@
             <button onclick="disableButtons1()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct1">✓</p>
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
-            <button class="score-btn">.d.</button>
+            <button class="score-btn1">.d.</button>
           </div>
         </div>
         <!-- Test2 -->
@@ -47,11 +47,11 @@
           <br />
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.a.</button>
+            <button class="score-btn2">.a.</button>
             <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct2">✓</p>
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons2()" class="unscore-btn">.c.</button>
@@ -72,10 +72,10 @@
             <button onclick="disableButtons3()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct3">✓</p>
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.c.</button>
+            <button class="score-btn3">.c.</button>
             <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
           </div>
         </div>
@@ -95,11 +95,11 @@
             <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct4">✓</p>
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons4()" class="unscore-btn">.c.</button>
-            <button class="score-btn">.d.</button>
+            <button class="score-btn4">.d.</button>
           </div>
         </div>
         <!-- Test5 -->
@@ -107,15 +107,18 @@
           <div class="questions">
             <h2>
               Q5- Looking at this series: 22, 21, 23, 22, 24, 23,... the number
-              that should come next is <strong style="color: #ffbc3f">25</strong> ?
+              that should come next is
+              <strong style="color: #ffbc3f">25</strong> ?
             </h2>
           </div>
           <br />
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.T.</button>
+            <button class="score-btn5">.T.</button>
             <button onclick="disableButtons5()" class="unscore-btn">.F.</button>
           </div>
+          <br />
+          <p class="correct5">✓</p>
         </div>
         <!-- Finsh test -->
         <div class="finsh">
@@ -142,6 +145,12 @@
     >
       Previous
     </button>
-    <script src="script1.js"></script>
+    <script src="script q.js"></script>
+    <script>
+      function transferScore() {
+        localStorage.setItem("lastScore", score);
+        window.location.href = "index1.html";
+      }
+    </script>
   </body>
 </html>

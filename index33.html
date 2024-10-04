@@ -29,10 +29,10 @@
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons1()" class="unscore-btn">.a.</button>
-            <button class="score-btn">.b.</button>
+            <button class="score-btn1">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct1">✓</p>
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
@@ -55,10 +55,10 @@
             <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct2">✓</p>
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.c.</button>
+            <button class="score-btn2">.c.</button>
             <button onclick="disableButtons2()" class="unscore-btn">.d.</button>
           </div>
         </div>
@@ -77,10 +77,10 @@
             <button onclick="disableButtons3()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct3">✓</p>
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.c.</button>
+            <button class="score-btn3">.c.</button>
             <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
           </div>
         </div>
@@ -100,11 +100,11 @@
             <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
           </div>
           <br />
-          <br />
+          <p class="correct4">✓</p>
           <br />
           <div class="ml-btns">
             <button onclick="disableButtons4()" class="unscore-btn">.c.</button>
-            <button class="score-btn">.d.</button>
+            <button class="score-btn4">.d.</button>
           </div>
         </div>
         <!-- Test5 -->
@@ -120,9 +120,11 @@
           <br />
           <br />
           <div class="ml-btns">
-            <button class="score-btn">.T.</button>
+            <button class="score-btn5">.T.</button>
             <button onclick="disableButtons5()" class="unscore-btn">.F.</button>
           </div>
+          <br />
+          <p class="correct5">✓</p>
         </div>
         <!-- Finsh test -->
         <div class="finsh">
@@ -149,6 +151,12 @@
     >
       Previous
     </button>
-    <script src="script3.js"></script>
+    <script src="script q.js"></script>
+    <script>
+      function transferScore() {
+        localStorage.setItem("lastScore", score);
+        window.location.href = "index3.html";
+      }
+    </script>
   </body>
 </html>
