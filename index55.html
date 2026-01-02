@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
+    <title>Kuwait Geography</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <h1>
+      <span id="score">0</span>
+    </h1>
+    <div class="container">
+      <div class="slider">
+        <div class="button-container1">
+          <div class="questions">
+            <h2>
+              Q1- Which is the largest island in Kuwait?
+              <br />a- Bubiyan<br />b- Failaka<br />c- Warbah <br />d- Kubbar<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn1">.a.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <p class="correct1">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.c.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.d.</button>
+          </div>
+        </div>
+        <div class="button-container2">
+          <div class="questions">
+            <h2>
+              Q2- What is the name of the dry North-West wind that blows in summer?<br />a- Al-Kous<br />b- Al-Sarrayat<br />c- Al-Wasmi<br />d- Al-Bawareh<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.a.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <p class="correct2">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.c.</button>
+            <button class="score-btn2">.d.</button>
+          </div>
+        </div>
+        <div class="button-container3">
+          <div class="questions">
+             <h2>
+              Q3- Which Kuwaiti island was known to the Ancient Greeks as "Ikaros"?<br />a- Miskan<br />b- Warbah<br />c- Failaka<br />d- Auhah<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons3()" class="unscore-btn">.a.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <p class="correct3">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn3">.c.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.d.</button>
+          </div>
+        </div>
+        <div class="button-container4">
+          <div class="questions">
+             <h2>
+              Q4- Which country borders Kuwait to the South?
+              <br />a- Iraq<br />b- Iran<br />c-
+              Saudi Arabia<br />d- Qatar<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.a.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.b.</button>
+          </div>
+          <br />
+          <p class="correct4">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn4">.c.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.d.</button>
+          </div>
+        </div>
+        <div class="button-container5">
+          <div class="questions">
+             <h2>
+              Q5- Kuwait has many permanent natural
+              <strong style="color: #ffbc3f">rivers</strong>
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons5()" class="unscore-btn">.T.</button>
+            <button class="score-btn5">.F.</button>
+          </div>
+          <br />
+          <p class="correct5">✓</p>
+        </div>
+        <div class="finsh">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <button onclick="transferScore()" class="finsh-btn">
+            Finsh the test
+          </button>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="slideNext()"
+      style="margin: 0%; margin-top: 2%; width: fit-content"
+      class="next"
+    >
+      Next
+    </button>
+    <br />
+    <button
+      onclick="slidePrev()"
+      style="margin: 0%; margin-bottom: 2%; width: fit-content"
+      class="previous"
+    >
+      Previous
+    </button>
+    <script src="script q.js"></script>
+    <script>
+      function transferScore() {
+        localStorage.setItem("lastScore", score);
+        window.location.href = "index5.html";
+      }
+    </script>
+  </body>
+</html>

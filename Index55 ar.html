@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Icon/1f9e0.svg" type="image/x-icon" />
+    <title>جغرافية الكويت</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <h1>
+      <span id="score">0</span>
+    </h1>
+    <div class="container">
+      <div class="slider">
+        <div class="button-container1">
+          <div class="questions">
+            <h2>
+              س1- ما هي أكبر جزيرة في الكويت؟
+              <br />أ- بوبيان<br />ب- فيلكا<br />ج- وربة <br />د- كبر<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn1">.أ.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <p class="correct1">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons1()" class="unscore-btn">.ج.</button>
+            <button onclick="disableButtons1()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <div class="button-container2">
+          <div class="questions">
+            <h2>
+              س2- ما اسم الرياح الشمالية الغربية الجافة التي تهب في الصيف؟<br />أ- الكوس<br />ب- السرايات<br />ج- الوسمي<br />د- البوارح<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons2()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <p class="correct2">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons2()" class="unscore-btn">.ج.</button>
+            <button class="score-btn2">.د.</button>
+          </div>
+        </div>
+        <div class="button-container3">
+          <div class="questions">
+             <h2>
+              س3- أي جزيرة كويتية عرفها الإغريق قديماً باسم "إيكاروس"؟<br />أ- مسكان<br />ب- وربة<br />ج- فيلكا<br />د- عوهة<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons3()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <p class="correct3">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn3">.ج.</button>
+            <button onclick="disableButtons3()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <div class="button-container4">
+          <div class="questions">
+             <h2>
+              س4- ما هي الدولة التي تحد الكويت من الجنوب؟
+              <br />أ- العراق<br />ب- إيران<br />ج- السعودية<br />د- قطر<br />
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons4()" class="unscore-btn">.أ.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.ب.</button>
+          </div>
+          <br />
+          <p class="correct4">✓</p>
+          <br />
+          <div class="ml-btns">
+            <button class="score-btn4">.ج.</button>
+            <button onclick="disableButtons4()" class="unscore-btn">.د.</button>
+          </div>
+        </div>
+        <div class="button-container5">
+          <div class="questions">
+             <h2>
+              س5- يوجد في الكويت العديد من الأنهار الطبيعية
+              <strong style="color: #ffbc3f">الدائمة</strong>
+            </h2>
+          </div>
+          <br />
+          <br />
+          <div class="ml-btns">
+            <button onclick="disableButtons5()" class="unscore-btn">.صح.</button>
+            <button class="score-btn5">.خطأ.</button>
+          </div>
+          <br />
+          <p class="correct5">✓</p>
+        </div>
+        <div class="finsh">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <button onclick="transferScore()" class="finsh-btn">
+            إنهاء الاختبار
+          </button>
+        </div>
+      </div>
+    </div>
+    <button
+      onclick="slideNext()"
+      style="margin: 0%; margin-top: 2%; width: fit-content"
+      class="next"
+    >
+      التالي
+    </button>
+    <br />
+    <button
+      onclick="slidePrev()"
+      style="margin: 0%; margin-bottom: 2%; width: fit-content"
+      class="previous"
+    >
+      السابق
+    </button>
+    <script src="script q.js"></script>
+    <script>
+      function transferScore() {
+        localStorage.setItem("lastScore", score);
+        window.location.href = "index5 ar.html";
+      }
+    </script>
+  </body>
+</html>
